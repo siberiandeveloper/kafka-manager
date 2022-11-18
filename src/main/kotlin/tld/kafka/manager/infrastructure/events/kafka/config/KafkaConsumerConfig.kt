@@ -1,4 +1,4 @@
-package tld.kafka.manager.infrastructure.kafka.config
+package tld.kafka.manager.infrastructure.events.kafka.config
 
 import org.apache.kafka.clients.consumer.ConsumerConfig
 import org.apache.kafka.common.serialization.StringDeserializer
@@ -8,7 +8,7 @@ import org.springframework.kafka.config.ConcurrentKafkaListenerContainerFactory
 import org.springframework.kafka.core.ConsumerFactory
 import org.springframework.kafka.core.DefaultKafkaConsumerFactory
 import org.springframework.kafka.support.converter.StringJsonMessageConverter
-import tld.kafka.manager.infrastructure.kafka.KafkaProperty
+import tld.kafka.manager.infrastructure.events.kafka.KafkaProperty
 
 @Configuration
 class KafkaConsumerConfig(val kafkaProperty: KafkaProperty) {

@@ -1,4 +1,4 @@
-package tld.kafka.manager.infrastructure.kafka
+package tld.kafka.manager.infrastructure.events.kafka
 
 import org.springframework.boot.context.properties.ConfigurationProperties
 

@@ -1,4 +1,4 @@
-package tld.kafka.manager.infrastructure.kafka.config
+package tld.kafka.manager.infrastructure.events.kafka.config
 
 import org.apache.kafka.clients.producer.ProducerConfig
 import org.apache.kafka.common.serialization.StringSerializer
@@ -8,7 +8,7 @@ import org.springframework.kafka.core.DefaultKafkaProducerFactory
 import org.springframework.kafka.core.KafkaTemplate
 import org.springframework.kafka.core.ProducerFactory
 import org.springframework.kafka.support.serializer.JsonSerializer
-import tld.kafka.manager.infrastructure.kafka.KafkaProperty
+import tld.kafka.manager.infrastructure.events.kafka.KafkaProperty
 
 @Configuration
 class KafkaProducerConfig(val kafkaProperty: KafkaProperty) {
