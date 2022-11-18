@@ -1,0 +1,9 @@
+spring:
+  kafka:
+    consumer:
+      auto-offset-reset: earliest
+    host: localhost
+    port: 9093
+    group: main
+    producers:
+      main: main
