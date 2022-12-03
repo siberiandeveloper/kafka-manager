@@ -4,7 +4,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.boot.runApplication
 import org.springframework.kafka.annotation.EnableKafka
-import tld.kafka.manager.infrastructure.events.kafka.KafkaProperty
+import tld.kafka.manager.application.messaging.kafka.KafkaProperty
 
 @EnableKafka
 @SpringBootApplication

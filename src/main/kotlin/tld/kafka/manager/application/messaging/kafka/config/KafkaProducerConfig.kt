@@ -1,4 +1,4 @@
-package tld.kafka.manager.infrastructure.events.kafka.config
+package tld.kafka.manager.application.messaging.kafka.config
 
 import org.apache.kafka.clients.producer.ProducerConfig
 import org.apache.kafka.common.serialization.StringSerializer
@@ -7,8 +7,7 @@ import org.springframework.context.annotation.Configuration
 import org.springframework.kafka.core.DefaultKafkaProducerFactory
 import org.springframework.kafka.core.KafkaTemplate
 import org.springframework.kafka.core.ProducerFactory
-import org.springframework.kafka.support.serializer.JsonSerializer
-import tld.kafka.manager.infrastructure.events.kafka.KafkaProperty
+import tld.kafka.manager.application.messaging.kafka.KafkaProperty
 
 @Configuration
 class KafkaProducerConfig(val kafkaProperty: KafkaProperty) {
@@ -18,7 +17,7 @@ class KafkaProducerConfig(val kafkaProperty: KafkaProperty) {
         val configProperties = HashMap<String, Any>()
         configProperties[ProducerConfig.BOOTSTRAP_SERVERS_CONFIG] = kafkaProperty.server
         configProperties[ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG] = StringSerializer::class
-        configProperties[ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG] = JsonSerializer::class
+        configProperties[ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG] = StringSerializer::class
         return DefaultKafkaProducerFactory(configProperties)
     }
 

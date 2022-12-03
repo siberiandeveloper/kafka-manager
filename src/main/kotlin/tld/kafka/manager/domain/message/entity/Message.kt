@@ -14,5 +14,4 @@ class Message(
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     val id: Int? = null
     ) {
-
 }
