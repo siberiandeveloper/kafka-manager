@@ -1,7 +1,5 @@
 # Kafka Manager
 
-[[_TOC_]]
-
 ###### Simple app to try Kotlin + Spring + Kafka
 
 ### Requirements
